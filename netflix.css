@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppons' , sans-serif;
+   box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(netflix\ page.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid#fff;
+    padding: 7px 10px;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    margin-top: 35px;
+}
+
+.middle h1{
+    font-size: 3rem;
+    min-width: 960px;
+}
+
+.middle h3{
+    font-weight: 100;
+    font-size: 22px;
+    margin-top: 22px;
+    margin-bottom: 30px;
+
+}
+
+.middle p{
+    font-size: 20px;
+    margin-right: 38px;
+    margin-bottom: 20px;
+}
+
+.email-signup{ 
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.email-signup input{
+   
+    background:  rgba(44, 46, 48, 0.429);
+    filter: opacity(90%);
+    padding: 20px;
+    min-width: 350px;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px 50px;
+    margin-right: 30px;
+}
+/*<----------------------------------page 2-------------------------------->*/
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    
+}
+
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.imgs{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.imgs img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 50px;
+     font-weight: 600;
+     margin-bottom: 20px;
+}
+
+/*<----------------------------------Footer-------------------------------->*/
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+.accord{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+
+.accord li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accord li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s ;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accord .content{
+    background: #303030;
+    text-align: left;
+    padding: 0px 0px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accord input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 10px 0px;
+}
+
+.accord input[type="radio"]:checked + label::after{
+    transform : rotate(135deg);
+}
